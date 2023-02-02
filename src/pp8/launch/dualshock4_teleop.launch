@@ -1,0 +1,6 @@
+<launch>
+
+  <node pkg="pp8" name="DualShock4_Receiver" type="dualshock4_receiver.py"/>
+  <node pkg="pp8" name="PP8_DualShock4_Teleop" type="dualshock4_teleop.py"/>
+ 
+</launch>

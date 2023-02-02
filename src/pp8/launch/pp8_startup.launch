@@ -1,0 +1,12 @@
+<launch>
+
+  <node pkg="pp8" name="PP8_Core" type="pp8_core.py"/>
+
+  <arg name="port_name" default="tcp"/>
+  <arg name="port_num" default="11411"/>
+  <node pkg="pp8" name="Serial_Node" type="pp8_serial_node.py">
+    <param name="~port" value="$(arg port_name)"/>
+    <param name="/rosserial_embeddedlinux/tcp_port" value="$(arg port_num)"/>
+  </node>
+
+</launch>

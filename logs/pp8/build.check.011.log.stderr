@@ -1,0 +1,10 @@
+[36m--[0m set EUSDIR to /opt/ros/melodic/share/euslisp/jskeus/eus
+[36m--[0m set ARCHDIR to Linux64
+[31m[1mCMake Error[0m at /opt/ros/melodic/share/genmsg/cmake/genmsg-extras.cmake:263 (message):
+  Messages depends on unknown pkg: pp8/DualShock4ButtonState (Missing
+  'find_package(pp8/DualShock4ButtonState)'?)
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:77 (generate_messages)
+
+
+make: *** [cmake_check_build_system] Error 1

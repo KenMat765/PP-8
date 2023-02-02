@@ -1,0 +1,1 @@
+/home/mech-user/pp8_ws/devel/.private/pp8/lib/python2.7/dist-packages/pp8/msg/_DualShock4JoyStickState.py

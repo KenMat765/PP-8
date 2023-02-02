@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/mech-user/pp8_ws/devel/.private/pp8_msgs/setup.sh

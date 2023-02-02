@@ -1,0 +1,30 @@
+Symlinking /home/mech-user/pp8_ws/devel/share/gennodejs/ros/pp8_msgs/_index.js
+Symlinking /home/mech-user/pp8_ws/devel/share/gennodejs/ros/pp8_msgs/msg/DualShock4ButtonState.js
+Symlinking /home/mech-user/pp8_ws/devel/share/gennodejs/ros/pp8_msgs/msg/DualShock4JoyStickState.js
+Symlinking /home/mech-user/pp8_ws/devel/share/gennodejs/ros/pp8_msgs/msg/_index.js
+Symlinking /home/mech-user/pp8_ws/devel/share/gennodejs/ros/pp8_msgs/msg/DualShock4HatState.js
+Symlinking /home/mech-user/pp8_ws/devel/share/roseus/ros/pp8_msgs/manifest.l
+Symlinking /home/mech-user/pp8_ws/devel/share/roseus/ros/pp8_msgs/msg/DualShock4JoyStickState.l
+Symlinking /home/mech-user/pp8_ws/devel/share/roseus/ros/pp8_msgs/msg/DualShock4ButtonState.l
+Symlinking /home/mech-user/pp8_ws/devel/share/roseus/ros/pp8_msgs/msg/DualShock4HatState.l
+Symlinking /home/mech-user/pp8_ws/devel/share/common-lisp/ros/pp8_msgs/msg/DualShock4HatState.lisp
+Symlinking /home/mech-user/pp8_ws/devel/share/common-lisp/ros/pp8_msgs/msg/_package_DualShock4JoyStickState.lisp
+Symlinking /home/mech-user/pp8_ws/devel/share/common-lisp/ros/pp8_msgs/msg/DualShock4JoyStickState.lisp
+Symlinking /home/mech-user/pp8_ws/devel/share/common-lisp/ros/pp8_msgs/msg/_package.lisp
+Symlinking /home/mech-user/pp8_ws/devel/share/common-lisp/ros/pp8_msgs/msg/pp8_msgs-msg.asd
+Symlinking /home/mech-user/pp8_ws/devel/share/common-lisp/ros/pp8_msgs/msg/_package_DualShock4HatState.lisp
+Symlinking /home/mech-user/pp8_ws/devel/share/common-lisp/ros/pp8_msgs/msg/_package_DualShock4ButtonState.lisp
+Symlinking /home/mech-user/pp8_ws/devel/share/common-lisp/ros/pp8_msgs/msg/DualShock4ButtonState.lisp
+Linked: (/home/mech-user/pp8_ws/devel/.private/pp8_msgs/share/pp8_msgs/cmake/pp8_msgsConfig-version.cmake, /home/mech-user/pp8_ws/devel/share/pp8_msgs/cmake/pp8_msgsConfig-version.cmake)
+Symlinking /home/mech-user/pp8_ws/devel/share/pp8_msgs/cmake/pp8_msgs-msg-paths.cmake
+Symlinking /home/mech-user/pp8_ws/devel/share/pp8_msgs/cmake/pp8_msgs-msg-extras.cmake
+Linked: (/home/mech-user/pp8_ws/devel/.private/pp8_msgs/share/pp8_msgs/cmake/pp8_msgsConfig.cmake, /home/mech-user/pp8_ws/devel/share/pp8_msgs/cmake/pp8_msgsConfig.cmake)
+Symlinking /home/mech-user/pp8_ws/devel/lib/python2.7/dist-packages/pp8_msgs/__init__.py
+Symlinking /home/mech-user/pp8_ws/devel/lib/python2.7/dist-packages/pp8_msgs/msg/_DualShock4ButtonState.py
+Symlinking /home/mech-user/pp8_ws/devel/lib/python2.7/dist-packages/pp8_msgs/msg/_DualShock4JoyStickState.py
+Symlinking /home/mech-user/pp8_ws/devel/lib/python2.7/dist-packages/pp8_msgs/msg/__init__.py
+Symlinking /home/mech-user/pp8_ws/devel/lib/python2.7/dist-packages/pp8_msgs/msg/_DualShock4HatState.py
+Linked: (/home/mech-user/pp8_ws/devel/.private/pp8_msgs/lib/pkgconfig/pp8_msgs.pc, /home/mech-user/pp8_ws/devel/lib/pkgconfig/pp8_msgs.pc)
+Symlinking /home/mech-user/pp8_ws/devel/include/pp8_msgs/DualShock4JoyStickState.h
+Symlinking /home/mech-user/pp8_ws/devel/include/pp8_msgs/DualShock4ButtonState.h
+Symlinking /home/mech-user/pp8_ws/devel/include/pp8_msgs/DualShock4HatState.h

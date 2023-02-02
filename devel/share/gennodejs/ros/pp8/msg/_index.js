@@ -1,0 +1,1 @@
+/home/mech-user/pp8_ws/devel/.private/pp8/share/gennodejs/ros/pp8/msg/_index.js

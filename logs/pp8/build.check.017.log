@@ -1,0 +1,51 @@
+[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/mech-user/pp8_ws/devel/.private/pp8
+[36m--[0m Using CMAKE_PREFIX_PATH: /home/mech-user/pp8_ws/devel;/home/mech-user/ros/semi/devel;/opt/ros/melodic
+[36m--[0m This workspace overlays: /home/mech-user/pp8_ws/devel;/home/mech-user/ros/semi/devel;/opt/ros/melodic
+[36m--[0m Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2")
+[36m--[0m Using PYTHON_EXECUTABLE: /usr/bin/python2
+[36m--[0m Using Debian Python package layout
+[36m--[0m Using empy: /usr/bin/empy
+[36m--[0m Using CATKIN_ENABLE_TESTING: ON
+[36m--[0m Call enable_testing()
+[36m--[0m Using CATKIN_TEST_RESULTS_DIR: /home/mech-user/pp8_ws/build/pp8/test_results
+[36m--[0m Found gtest sources under '/usr/src/googletest': gtests will be built
+[36m--[0m Found gmock sources under '/usr/src/googletest': gmock will be built
+[36m--[0m Found PythonInterp: /usr/bin/python2 (found version "2.7.17")
+[36m--[0m Using Python nosetests: /usr/bin/nosetests-2.7
+[36m--[0m catkin 0.7.29
+[36m--[0m BUILD_SHARED_LIBS is on
+[36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[36m--[0m set EUSDIR to /opt/ros/melodic/share/euslisp/jskeus/eus
+[36m--[0m set ARCHDIR to Linux64
+[36m--[0m [roseus.cmake] loading roseus.cmake from pp8
+[36m--[0m [roseus.cmake] roseus 1.7.4
+[36m--[0m [roseus.cmake] jskeus 1.2.5
+[36m--[0m [roseus.cmake] euslisp 9.29.0
+[36m--[0m [roseus.cmake] geneus 2.2.6
+[36m--[0m [roseus.cmake] genmsg 0.5.16
+[36m--[0m [roseus.cmake] message_generation Requires: gencpp;geneus;gennodejs;genlisp;genmsg;genpy
+[33m[1mCMake Warning[0m at /home/mech-user/pp8_ws/build/pp8/cmake/pp8-genmsg.cmake:3 (message):
+  Invoking generate_messages() without having added any message or service
+  file before.
+
+  You should either add add_message_files() and/or add_service_files() calls
+  or remove the invocation of generate_messages().
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/melodic/share/genmsg/cmake/genmsg-extras.cmake:307 (include)
+  CMakeLists.txt:74 (generate_messages)
+
+
+[36m--[0m pp8: 0 messages, 0 services
+[31m[1mCMake Error[0m at /opt/ros/melodic/share/catkin/cmake/catkin_package.cmake:196 (message):
+  catkin_package() the catkin package 'pp8_msgs' has been find_package()-ed
+  but is not listed as a build dependency in the package.xml
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/melodic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  CMakeLists.txt:110 (catkin_package)
+
+
+[36m--[0m Configuring incomplete, errors occurred!
+See also "/home/mech-user/pp8_ws/build/pp8/CMakeFiles/CMakeOutput.log".
+See also "/home/mech-user/pp8_ws/build/pp8/CMakeFiles/CMakeError.log".
+Makefile:1468: recipe for target 'cmake_check_build_system' failed
+make: *** [cmake_check_build_system] Error 1

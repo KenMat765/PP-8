@@ -1,0 +1,38 @@
+[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/mech-user/pp8_ws/devel/.private/pp8_msgs
+[36m--[0m Using CMAKE_PREFIX_PATH: /home/mech-user/pp8_ws/devel;/home/mech-user/ros/semi/devel;/opt/ros/melodic
+[36m--[0m This workspace overlays: /home/mech-user/pp8_ws/devel;/home/mech-user/ros/semi/devel;/opt/ros/melodic
+[36m--[0m Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2")
+[36m--[0m Using PYTHON_EXECUTABLE: /usr/bin/python2
+[36m--[0m Using Debian Python package layout
+[36m--[0m Using empy: /usr/bin/empy
+[36m--[0m Using CATKIN_ENABLE_TESTING: ON
+[36m--[0m Call enable_testing()
+[36m--[0m Using CATKIN_TEST_RESULTS_DIR: /home/mech-user/pp8_ws/build/pp8_msgs/test_results
+[36m--[0m Found gtest sources under '/usr/src/googletest': gtests will be built
+[36m--[0m Found gmock sources under '/usr/src/googletest': gmock will be built
+[36m--[0m Found PythonInterp: /usr/bin/python2 (found version "2.7.17")
+[36m--[0m Using Python nosetests: /usr/bin/nosetests-2.7
+[36m--[0m catkin 0.7.29
+[36m--[0m BUILD_SHARED_LIBS is on
+[36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[31m[1mCMake Error[0m at /home/mech-user/pp8_ws/build/pp8_msgs/cmake/pp8_msgs-genmsg.cmake:3 (message):
+  Could not find messages which
+  '/home/mech-user/pp8_ws/src/pp8_msgs/msg/DualShock4State.msg' depends on.
+  Did you forget to specify generate_messages(DEPENDENCIES ...)?
+
+  Cannot locate message [DualShock4ButtonState]: unknown package [pp8] on
+  search path [{{'sensor_msgs':
+  ['/opt/ros/melodic/share/sensor_msgs/cmake/../msg'], 'pp8_msgs':
+  ['/home/mech-user/pp8_ws/src/pp8_msgs/msg'], 'geometry_msgs':
+  ['/opt/ros/melodic/share/geometry_msgs/cmake/../msg'], 'std_msgs':
+  ['/opt/ros/melodic/share/std_msgs/cmake/../msg']}}]
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/melodic/share/genmsg/cmake/genmsg-extras.cmake:307 (include)
+  CMakeLists.txt:75 (generate_messages)
+
+
+[36m--[0m Configuring incomplete, errors occurred!
+See also "/home/mech-user/pp8_ws/build/pp8_msgs/CMakeFiles/CMakeOutput.log".
+See also "/home/mech-user/pp8_ws/build/pp8_msgs/CMakeFiles/CMakeError.log".
+Makefile:726: recipe for target 'cmake_check_build_system' failed
+make: *** [cmake_check_build_system] Error 1

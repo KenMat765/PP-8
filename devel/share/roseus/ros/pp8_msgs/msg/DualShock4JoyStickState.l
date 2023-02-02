@@ -1,0 +1,1 @@
+/home/mech-user/pp8_ws/devel/.private/pp8_msgs/share/roseus/ros/pp8_msgs/msg/DualShock4JoyStickState.l

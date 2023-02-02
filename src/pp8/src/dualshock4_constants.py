@@ -1,0 +1,27 @@
+# Buttons
+CROSS = 0
+CIRCLE = 1
+TRIANGLE = 2
+SQUARE = 3
+L1 = 4
+R1 = 5
+L2 = 6
+R2 = 7
+SHARE = 8
+OPTION = 9
+L3 = 10
+R3 = 11
+PSBUTTON = 12
+TOUCHPAD = 13
+
+# Cross Buttons
+HAT_X = 0
+HAT_Y = 1
+
+# Joy Sticks
+LEFT_X = 0
+LEFT_Y = 1
+RIGHT_Y = 4
+RIGHT_X = 3
+LEFT_2 = 2
+RIGHT_2 = 5

@@ -1,0 +1,8 @@
+prefix=/home/mech-user/pp8_ws/devel/.private/pp8
+
+Name: pp8
+Description: Description of pp8
+Version: 0.0.0
+Cflags: -I/home/mech-user/pp8_ws/devel/.private/pp8/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs message_generation message_runtime roscpp roseus rospy std_msgs sensor_msgs
