@@ -14,8 +14,8 @@ long a;
 // Wifi
 // const char SSID[] = "JSK300";
 // const char PASSWORD[] = "89sk389sk3";
-const char SSID[] = "Ken's iPhone";
-const char PASSWORD[] = "8z73ehz8qnjqm";
+const char SSID[] = "...";
+const char PASSWORD[] = "...";
 // IPAddress server(192, 168, 97, 106);
 IPAddress server(172, 20, 10, 8);
 const uint16_t serverPort = 11413;
