@@ -1,0 +1,8 @@
+prefix=/home/mech-user/pp8_ws/install
+
+Name: jsk_rosbag_tools
+Description: Description of jsk_rosbag_tools
+Version: 2.2.12
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

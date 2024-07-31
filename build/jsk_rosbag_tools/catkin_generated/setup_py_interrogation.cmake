@@ -1,0 +1,7 @@
+set(jsk_rosbag_tools_SETUP_PY_SETUP_MODULE "distutils.core")
+set(jsk_rosbag_tools_SETUP_PY_VERSION "2.2.12")
+set(jsk_rosbag_tools_SETUP_PY_SCRIPTS "")
+set(jsk_rosbag_tools_SETUP_PY_PACKAGES "jsk_rosbag_tools")
+set(jsk_rosbag_tools_SETUP_PY_PACKAGE_DIRS "python/jsk_rosbag_tools")
+set(jsk_rosbag_tools_SETUP_PY_MODULES "")
+set(jsk_rosbag_tools_SETUP_PY_MODULE_DIRS "")

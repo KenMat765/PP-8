@@ -1,0 +1,17 @@
+<launch>
+
+  <node name="left_arm_republish"
+        pkg="image_transport" type="republish"
+        args="compressed raw">
+    <remap from="in" to="/left_arm/image_raw" />
+    <remap from="out" to="/left_arm/image_raw" />
+  </node>
+
+  <node name="right_arm_republish"
+        pkg="image_transport" type="republish"
+        args="compressed raw">
+    <remap from="in" to="/right_arm/image_raw" />
+    <remap from="out" to="/right_arm/image_raw" />
+  </node>
+  
+</launch>

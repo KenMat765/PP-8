@@ -1,0 +1,1 @@
+/home/mech-user/pp8_ws/devel/.private/jsk_rosbag_tools/lib/pkgconfig/jsk_rosbag_tools.pc

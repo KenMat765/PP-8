@@ -1,0 +1,9 @@
+global:
+  layout: vertical
+plots:
+  - title: "right arm ultrasonic"
+    topic: [/right_arm/ultrasonic_sensor]
+    field: ["data"]
+  - title: "left arm ultrasonic"
+    topic: [/left_arm/ultrasonic_sensor]
+    field: ["data"]

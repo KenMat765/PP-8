@@ -1,0 +1,13 @@
+<launch>
+
+  <arg name="video_device" default="/dev/video4" />
+
+  <node name="usb_cam"
+	pkg="usb_cam" type="usb_cam_node" >
+    <rosparam subst_value="true">
+      video_device: $(arg video_device)
+      pixel_format: yuyv
+    </rosparam>
+  </node>
+
+</launch>

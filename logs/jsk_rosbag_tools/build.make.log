@@ -1,0 +1,104 @@
+[35m[1mScanning dependencies of target download_audio_data[0m
+[35m[1mScanning dependencies of target jsk_rosbag_tools_generate_virtualenv[0m
+[35m[1mScanning dependencies of target download_video_data[0m
+[ 20%] [34m[1mGenerate virtualenv in /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv[0m
+Downloading https://drive.google.com/uc?export=download&id=1rFZYoFjLqIWjEe0DaNiL3k9893m31nu7 to /home/mech-user/pp8_ws/src/jsk_common/jsk_rosbag_tools/samples/data/2022-05-07-hello-test.bag...Downloading https://drive.google.com/uc?export=download&id=1v4YNOHnHYxLOty1lYR2R6lfNF0itCwK7 to /home/mech-user/pp8_ws/src/jsk_common/jsk_rosbag_tools/samples/data/20220530173950_go_to_kitchen_rosbag.bag...True
+Running virtualenv with interpreter /usr/bin/python2
+Creating /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7
+Symlinking Python bootstrap modules
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/lib-dynload
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/os.py
+  Ignoring built-in bootstrap module: posix
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/posixpath.py
+  Cannot import bootstrap module: nt
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/ntpath.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/genericpath.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/fnmatch.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/locale.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/encodings
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/codecs.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/stat.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/UserDict.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/copy_reg.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/types.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/re.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/sre.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/sre_parse.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/sre_constants.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/sre_compile.py
+  Ignoring built-in bootstrap module: zlib
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/warnings.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/linecache.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/_abcoll.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/abc.py
+  Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/_weakrefset.py
+Creating /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/site-packages
+Writing /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/site.py
+Writing /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/orig-prefix.txt
+Creating parent directories for /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/include
+Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/include/python2.7
+Creating /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin
+New python executable in /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin/python2
+Changed mode of /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin/python2 to 0775
+Also creating executable in /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin/python
+Changed mode of /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin/python to 0775
+Testing executable with /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin/python2 -c "import sys;out=sys.stdout;getattr(out, "buffer", out).write(sys.prefix.encode("utf-8"))"
+Got sys.prefix result: u'/home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv'
+Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/local/lib
+Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/local/include
+Symlinking /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/local/bin
+Creating /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/distutils
+Writing /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/distutils/__init__.py
+Writing /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/lib/python2.7/distutils/distutils.cfg
+Installing pip, wheel...
+  Collecting pip
+    Cache entry deserialization failed, entry ignored
+    Using cached https://files.pythonhosted.org/packages/27/79/8a850fe3496446ff0d584327ae44e7500daf6764ca1a382d2d02789accf7/pip-20.3.4-py2.py3-none-any.whl
+  Collecting wheel
+    Using cached https://files.pythonhosted.org/packages/27/d6/003e593296a85fd6ed616ed962795b2f87709c3eee2bca4f6d0fe55c6d00/wheel-0.37.1-py2.py3-none-any.whl
+  Installing collected packages: pip, wheel
+ done.
+Checking md5sum on /home/mech-user/pp8_ws/src/jsk_common/jsk_rosbag_tools/samples/data/2022-05-07-hello-test.bag
+[ 20%] Built target download_audio_data
+  Successfully installed pip-20.3.4 wheel-0.37.1
+...Installing pip, wheel...done.
+Writing /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin/activate
+Writing /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin/activate.fish
+Writing /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin/activate_this.py
+Writing /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin/activate.csh
+Writing /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin/python-config
+Changed mode of /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv/bin/python-config to 0775
+[31mERROR: pip's legacy dependency resolver does not consider dependency conflicts when selecting packages. This behaviour is the source of the following dependency conflicts.
+launchpadlib 1.10.6 requires testresources, which is not installed.[0m
+ done.
+Checking md5sum on /home/mech-user/pp8_ws/src/jsk_common/jsk_rosbag_tools/samples/data/20220530173950_go_to_kitchen_rosbag.bag
+[ 20%] Built target download_video_data
+[35m[1mScanning dependencies of target download[0m
+[ 20%] Built target download
+[ 40%] [34m[1mLock input requirements if they don't exist[0m
+certifi==2021.10.8        [32m# via requests[0m[0m
+chardet==4.0.0            [32m# via requests[0m[0m
+contextlib2==0.6.0.post1  [32m# via importlib-resources, zipp[0m[0m
+decorator==4.4.2          [32m# via moviepy[0m[0m
+enum34==1.1.10            [32m# via imageio[0m[0m
+futures==3.4.0            [32m# via imageio[0m[0m
+idna==2.10                [32m# via requests[0m[0m
+imageio==2.4.1            [32m# via moviepy[0m[0m
+importlib-resources==3.3.1  [32m# via tqdm[0m[0m
+moviepy==1.0.3            [32m# via -r requirements.in.python2[0m[0m
+numpy==1.16.6             [32m# via -r requirements.in.python2, imageio, moviepy[0m[0m
+pathlib2==2.3.7.post1     [32m# via importlib-resources[0m[0m
+pillow==6.2.2             [32m# via imageio[0m[0m
+proglog==0.1.10           [32m# via moviepy[0m[0m
+requests==2.27.1          [32m# via moviepy[0m[0m
+scandir==1.10.0           [32m# via pathlib2[0m[0m
+singledispatch==3.7.0     [32m# via importlib-resources[0m[0m
+six==1.16.0               [32m# via pathlib2, singledispatch[0m[0m
+tqdm==4.64.1              [32m# via moviepy, proglog[0m[0m
+typing==3.10.0.0          [32m# via importlib-resources, pathlib2[0m[0m
+urllib3==1.26.15          [32m# via requests[0m[0m
+zipp==1.2.0               [32m# via importlib-resources[0m[0m
+[ 60%] [34m[1mInstall requirements to /home/mech-user/pp8_ws/build/jsk_rosbag_tools/venv[0m
+[ 80%] [34m[1mPrepare relocated virtualenvs for develspace and installspace[0m
+[100%] [34m[1mPer-package virtualenv target[0m
+[100%] Built target jsk_rosbag_tools_generate_virtualenv

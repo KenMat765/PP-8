@@ -13,6 +13,4 @@
     (:file "_package_DualShock4JoyStickState" :depends-on ("_package"))
     (:file "DualShock4State" :depends-on ("_package_DualShock4State"))
     (:file "_package_DualShock4State" :depends-on ("_package"))
-    (:file "PP8_Status" :depends-on ("_package_PP8_Status"))
-    (:file "_package_PP8_Status" :depends-on ("_package"))
   ))

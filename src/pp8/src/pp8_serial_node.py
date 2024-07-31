@@ -49,7 +49,7 @@ if __name__=="__main__":
     rospy.loginfo("ROS Serial Python Node")
 
     port_name = rospy.get_param('~port','tcp')
-    baud = int(rospy.get_param('~baud','57600'))
+    baud = int(rospy.get_param('~baud','115200'))
 
     # for systems where pyserial yields errors in the fcntl.ioctl(self.fd, TIOCMBIS, \
     # TIOCM_DTR_str) line, which causes an IOError, when using simulated port
@@ -68,7 +68,7 @@ if __name__=="__main__":
 
     if port_name == "tcp" :
         server = RosSerialServer(tcp_portnum, fork_server)
-        rospy.loginfo("Waiting for socket connections on port %d" % tcp_portnum)
+        rospy.loginfo("Waiting for socket connections on port %d at baud %d" % (tcp_portnum, baud))
         try:
             server.listen()
         except KeyboardInterrupt:

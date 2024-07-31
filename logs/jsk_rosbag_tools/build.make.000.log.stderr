@@ -1,0 +1,24 @@
+[31mERROR: pip's legacy dependency resolver does not consider dependency conflicts when selecting packages. This behaviour is the source of the following dependency conflicts.
+launchpadlib 1.10.6 requires testresources, which is not installed.[0m
+certifi==2021.10.8        [32m# via requests[0m[0m
+chardet==4.0.0            [32m# via requests[0m[0m
+contextlib2==0.6.0.post1  [32m# via importlib-resources, zipp[0m[0m
+decorator==4.4.2          [32m# via moviepy[0m[0m
+enum34==1.1.10            [32m# via imageio[0m[0m
+futures==3.4.0            [32m# via imageio[0m[0m
+idna==2.10                [32m# via requests[0m[0m
+imageio==2.4.1            [32m# via moviepy[0m[0m
+importlib-resources==3.3.1  [32m# via tqdm[0m[0m
+moviepy==1.0.3            [32m# via -r requirements.in.python2[0m[0m
+numpy==1.16.6             [32m# via -r requirements.in.python2, imageio, moviepy[0m[0m
+pathlib2==2.3.7.post1     [32m# via importlib-resources[0m[0m
+pillow==6.2.2             [32m# via imageio[0m[0m
+proglog==0.1.10           [32m# via moviepy[0m[0m
+requests==2.27.1          [32m# via moviepy[0m[0m
+scandir==1.10.0           [32m# via pathlib2[0m[0m
+singledispatch==3.7.0     [32m# via importlib-resources[0m[0m
+six==1.16.0               [32m# via pathlib2, singledispatch[0m[0m
+tqdm==4.64.1              [32m# via moviepy, proglog[0m[0m
+typing==3.10.0.0          [32m# via importlib-resources, pathlib2[0m[0m
+urllib3==1.26.15          [32m# via requests[0m[0m
+zipp==1.2.0               [32m# via importlib-resources[0m[0m
