@@ -4,6 +4,7 @@
 import cv2
 import argparse
 
+# コマンドラインから引数を取得
 parser = argparse.ArgumentParser()
 parser.add_argument('url', type=str)
 args = parser.parse_args()
@@ -14,8 +15,8 @@ print("URL: " + video_url)
 cap = cv2.VideoCapture(video_url)
 
 # 顔検出器の初期化
-# xml = 'haarcascade_frontalface_default.xml'
-xml = 'haarcascade_eye_tree_eyeglasses.xml'
+xml = 'haarcascade_frontalface_default.xml'
+# xml = 'haarcascade_eye_tree_eyeglasses.xml'
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + xml)
 
 # トラッカーの初期化
