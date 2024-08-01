@@ -31,8 +31,8 @@ int16_t tmp_x;
 TaskHandle_t i2sTaskHandle = NULL;
 
 // === ROS === //
-ros::NodeHandle_<ArduinoHardware, 25, 25, 1024, 1024> nh;
-// ros::NodeHandle_<ArduinoHardware, 25, 25, 2048, 2048> nh;
+// ros::NodeHandle_<ArduinoHardware, 25, 25, 1024, 1024> nh;
+ros::NodeHandle_<ArduinoHardware, 25, 25, 2048, 2048> nh;
 // ros::NodeHandle_<ArduinoHardware, 25, 25, 4096, 4096> nh;
 audio_common_msgs::AudioData audio_msg;
 ros::Publisher pub_audio("/audio", &audio_msg);
@@ -155,20 +155,31 @@ void setup() {
     while(!nh.connected())
     {
       nh.spinOnce();
-      M5.dis.clear();
       M5.dis.drawpix(0, CRGB(0, 255, 0));
       delay(100);
-      M5.dis.clear();
       M5.dis.drawpix(0, CRGB(0, 0, 0));
       delay(100);
     }
 
-    M5.dis.clear();
     M5.dis.drawpix(0, CRGB(255, 255, 255));
     delay(1000);
 }
 
 void loop() {
+    // === ROS Connection Check === //
+    if (!nh.connected())
+    {
+      while(!nh.connected())
+      {
+        nh.spinOnce();
+        M5.dis.drawpix(0, CRGB(255, 0, 0));
+        delay(50);
+        M5.dis.drawpix(0, CRGB(0, 0, 0));
+        delay(50);
+      }
+      M5.dis.drawpix(0, CRGB(255, 255, 255));
+    }
+
     int data_num = ringBuffer.available();
     if(data_num > 0) {
         uint8_t audio_data[data_num*2];

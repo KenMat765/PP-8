@@ -5,8 +5,8 @@
 
 // === ROS === //
 #include <ros.h>
-#include <audio_common_msgs/AudioData.h>
 #include <std_msgs/UInt16.h>
+#include <std_msgs/UInt8MultiArray.h>
 
 constexpr int CONFIG_I2S_BCK_PIN = 19;
 constexpr int CONFIG_I2S_LRCK_PIN = 33;
@@ -30,8 +30,9 @@ int16_t tmp_x;
 TaskHandle_t i2sTaskHandle = NULL;
 
 // === Wifi === //
-const char SSID[] = "JSK300";
+const char SSID[] = "602_experiment_2.4G";
 const char PASSWORD[] = "89sk389sk3";
+// IPAddress server(192, 168, 97, 47);
 IPAddress server(192, 168, 97, 162);
 const uint16_t serverPort = 11411;
 WiFiClient client;
@@ -45,11 +46,9 @@ public:
 };
 
 // === ROS === //
-// ros::NodeHandle_<WiFiHardware, 25, 25, 1024, 1024> nh;
-ros::NodeHandle_<WiFiHardware, 25, 25, 2048, 2048> nh;
-// ros::NodeHandle_<WiFiHardware, 25, 25, 4096, 4096> nh;
-audio_common_msgs::AudioData audio_msg;
-ros::Publisher pub_audio("/audio", &audio_msg);
+ros::NodeHandle_<WiFiHardware, 25, 25, 1024, 1024> nh;
+std_msgs::UInt8MultiArray audio_raw_msg;
+ros::Publisher pub_audio_raw("/audio_raw", &audio_raw_msg);
 std_msgs::UInt16 num_msg;
 ros::Publisher pub_num("/num", &num_msg);
 
@@ -171,7 +170,7 @@ void setup() {
 
     // === Ros === //
     nh.initNode();
-    nh.advertise(pub_audio);
+    nh.advertise(pub_audio_raw);
     nh.advertise(pub_num);
     while(!nh.connected())
     {
@@ -194,31 +193,23 @@ void loop() {
 
     // data_numがほぼ常に2000になっている
     int data_num = ringBuffer.available();
-    if(data_num > 0) {
-        uint8_t audio_data[data_num*2];
-        for(int k = 0; k < data_num*2; k+=2) {
+    if(data_num > 0)
+    {
+        uint8_t audio_raw_data[data_num];
+        for(int k = 0; k < data_num; k++)
+        {
             int8_t value = ringBuffer.read();
-            int16_t shifted = value * 256;
-            uint8_t high = (uint8_t)((shifted >> 8) & 0xFF);
-            uint8_t low = (uint8_t)(shifted & 0xFF);
-            audio_data[k] = low;
-            audio_data[k+1] = high;
+            audio_raw_data[k] = value;
         }
 
         // === Publish Audio Data === //
-        audio_msg.data_length = data_num*2;
-        audio_msg.data = audio_data;
-        // pub_audio.publish(&audio_msg);
-
-        num_msg.data = data_num * 2;
-        pub_num.publish(&num_msg);
+        audio_raw_msg.data_length = data_num;
+        audio_raw_msg.data = audio_raw_data;
+        // pub_audio_raw.publish(&audio_raw_msg);
     }
 
-    // // === Publish Audio Data === //
-    // uint8_t audio_data[1] = {1};
-    // audio_msg.data_length = 1;
-    // audio_msg.data = audio_data;
-    // pub_audio.publish(&audio_msg);
+    num_msg.data = data_num;
+    pub_num.publish(&num_msg);
 
     nh.spinOnce();
     delay(1);
